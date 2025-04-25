@@ -12,10 +12,10 @@ function App() {
     <>
       <div className={darktheme ? "flex flex-col sm:flex-row justify-between text-white bg-black" : "flex flex-col sm:flex-row justify-between"}>
         <Header darktheme={darktheme} setDarktheme={setDarktheme} />
-        <Sidebar darktheme={darktheme} setDarktheme={setDarktheme}/>
+        <Sidebar darktheme={darktheme} setDarktheme={setDarktheme} />
         <Postpage />
         <Follow />
-        <Footer />
+        <Footer darktheme={darktheme} setDarktheme={setDarktheme} />
       </div>
     </>
   )

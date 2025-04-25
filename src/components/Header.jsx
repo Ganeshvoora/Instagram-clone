@@ -3,7 +3,7 @@ import Icon from './Icon'
 
 const Header = ({ darktheme, setDarktheme }) => {
   return (
-    <div className='sm:hidden fixed top-0 w-full h-16 flex justify-around items-center border-t border-gray-300'>
+    <div className={darktheme?'sm:hidden sticky top-0 w-full h-16 flex justify-around items-center border-t border-gray-300 bg-black':'sm:hidden fixed top-0 w-full h-16 flex justify-around items-center border-t border-gray-300 bg-white'}>
       <h1 className='pacifico-regular'>Instagram</h1>
       <input className='border-1 w-60 rounded-md h-9 p-1' placeholder='🔍 Search' type="text" />
       <Icon icon={"fa-solid fa-heart"} name={"Notifications"} />
